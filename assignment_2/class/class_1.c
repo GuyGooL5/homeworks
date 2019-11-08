@@ -3,7 +3,7 @@
 int main()
 {
     int num, a, b, c;
-    printf("Enter a three digit number");
+    printf("Enter a three digit number: ");
     scanf("%d", &num);
     a = num / 100;
     b = (num % 100) / 10;
