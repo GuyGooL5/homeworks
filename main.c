@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+/*Temporary code goes here (._.) */
+
 int main()
 {
     int num, a, b, c;
