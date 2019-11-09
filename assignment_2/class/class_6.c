@@ -11,14 +11,8 @@ int main()
     scanf("%f", &fly);
     printf("Enter distance between cities: ");
     scanf("%f", &dist);
-    while (dist > 0.00001)
-    {
-        time = dir ? dist / (car_b + fly) : dist / (car_a + fly);
-        fly_dist += time * fly;
-        dist -= (time * (car_a + car_b));
-        dir = dir ? 0 : 1;
-    };
-
+    time = dist / (car_a + car_b);
+    fly_dist = time * fly;
     printf("Fly Distance is %.02f", fly_dist);
     return 0;
 }

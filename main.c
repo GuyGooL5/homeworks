@@ -2,62 +2,17 @@
 
 int main()
 {
-    int day, month, year, days_a_month;
-    printf("Enter day: ");
-    scanf("%d", &day);
-    printf("Enter month: ");
-    scanf("%d", &month);
-    printf("Enter year: ");
-    scanf("%d", &year);
-
-    if (month > 0 && month <= 12)
-    {
-        switch (month)
-        {
-        case 1:
-        case 3:
-        case 5:
-        case 7:
-        case 8:
-        case 10:
-        case 12:
-            days_a_month = 31;
-            break;
-        case 2:
-            days_a_month = year % 4 ? 28 : 29;
-            break;
-        default:
-            days_a_month = 30;
-            break;
-        }
-        if (day <= days_a_month && day > 0)
-        {
-            if ((day + 1) > days_a_month)
-            {
-                day = 1;
-                month += 1;
-
-                if (month > 12)
-                {
-                    month = 1;
-                    year += 1;
-                }
-            }
-            else
-                day += 1;
-        }
-        else
-        {
-            printf("Invalid day");
-            return -1;
-        }
-    }
-    else
-    {
-        printf("Invalid month");
-        return -1;
-    }
-    printf("%d %d %d", day, month, year);
-
+    float car_a, car_b, fly, time, dist, dir = 1, fly_dist = 0;
+    printf("Enter Car A's speed: ");
+    scanf("%f", &car_a);
+    printf("Enter Car B's speed: ");
+    scanf("%f", &car_b);
+    printf("Enter the fly's speed: ");
+    scanf("%f", &fly);
+    printf("Enter distance between cities: ");
+    scanf("%f", &dist);
+    time = dist / (car_a + car_b);
+    fly_dist = time * fly;
+    printf("Fly Distance is %.02f", fly_dist);
     return 0;
 }
