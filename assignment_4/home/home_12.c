@@ -1,18 +1,18 @@
 #include <stdio.h>
 int main()
 {
-  int n, tmp, mult_odd = 1, mult_even = 1;
+  int n, tmp, sum_odd = 0, sum_even = 0;
   printf("Enter a number: ");
   scanf("%d", &n);
   while (n)
   {
     tmp = n % 10;
     if (tmp % 2)
-      mult_odd *= tmp;
+      sum_odd += tmp;
     else
-      mult_even *= tmp;
+      sum_even += tmp;
     n /= 10;
   }
-  printf("%.2lf", (double)mult_even / mult_odd);
+  printf("%d", sum_even - sum_odd);
   return 0;
 }
