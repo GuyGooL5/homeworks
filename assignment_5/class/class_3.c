@@ -18,7 +18,7 @@ int sum_proper_divisors(int n)
         if (!(n % i))
             sum += i + n / i;
     i--;
-    if (n / i == i)
+    if (n % i == 0 && n / i == i)
         sum -= i;
     return sum;
 }
