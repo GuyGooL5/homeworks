@@ -50,8 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-
+2018/
+main.exe
 main.c
-
+exams/
 tests/
 .vscode/
