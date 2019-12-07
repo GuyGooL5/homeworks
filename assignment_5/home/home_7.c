@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int hasEvenDivisors(int n);
+int hasEvenDivisors(int);
 
 int main()
 {
@@ -12,7 +12,7 @@ int main()
         printf("%d has even divisors", n);
     }
     else
-        printf("%d has odd divisors",n);
+        printf("%d has odd divisors", n);
     return 0;
 }
 
@@ -22,7 +22,7 @@ int hasEvenDivisors(int n)
     for (i; i * i <= n; i++)
     {
         if (n % i)
-            even=!even;
+            even = !even;
     }
     return even;
 }

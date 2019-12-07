@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int gcd(int a, int b);
-void print_lowest_term(int nu, int de);
+int gcd(int, int);
+void print_lowest_term(int, int);
 int main()
 {
     int nu, de;

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int get_highest_divisor(int n);
+int get_highest_divisor(int);
 
 int main()
 {

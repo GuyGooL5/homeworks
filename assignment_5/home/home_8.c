@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int get_lowest_divisor(int n);
+int get_lowest_divisor(int);
 
 int main()
 {

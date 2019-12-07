@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-double square(double n);
-double cube(double n);
-double power(double n, int pwr);
+double square(double);
+double cube(double);
+double power(double, int);
 
 int main()
 {

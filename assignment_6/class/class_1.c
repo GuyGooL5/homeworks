@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int hasEvenDigitRecursive(int n);
+int hasEvenDigitRecursive(int);
 
 int main()
 {

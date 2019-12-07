@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int numOfDigitsRecursive(int num);
-int sumOfDigitsRecursive(int num);
-int areDigitsAscendingRtlRecursive(int num);
+int numOfDigitsRecursive(int);
+int sumOfDigitsRecursive(int);
+int areDigitsAscendingRtlRecursive(int);
 
 int main()
 {
@@ -11,7 +11,7 @@ int main()
     scanf("%d", &n);
     printf("%d has %d number of digits\n", n, numOfDigitsRecursive(n));
     printf("%d has %d sum of digits\n", n, sumOfDigitsRecursive(n));
-    printf("is %d ascending? [%c]\n", n,areDigitsAscendingRtlRecursive(n)?'Y':'N');
+    printf("is %d ascending? [%c]\n", n, areDigitsAscendingRtlRecursive(n) ? 'Y' : 'N');
     return 0;
 }
 
@@ -31,10 +31,11 @@ int sumOfDigitsRecursive(int num)
 
 int areDigitsAscendingRtlRecursive(int num)
 {
-    if(num<10){
+    if (num < 10)
+    {
         return 1;
     }
-    if(num%10<=(num/10)%10)
-        return areDigitsAscendingRtlRecursive(num/10);
+    if (num % 10 <= (num / 10) % 10)
+        return areDigitsAscendingRtlRecursive(num / 10);
     return 0;
 }

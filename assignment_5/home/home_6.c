@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int sum_common_divisors(int a, int b);
-int sum_proper_divisors(int n);
+int sum_common_divisors(int, int);
+int sum_proper_divisors(int);
 
 int main()
 {

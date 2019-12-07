@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int smallerThanNumRecursive(int num);
+int smallerThanNumRecursive(int);
 int main()
 {
     int num;

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int isEven(int n);
-int isOdd(int n);
+int isEven(int);
+int isOdd(int);
 
 int main()
 {

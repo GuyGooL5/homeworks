@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-long ones(int digit);
+long ones(int);
 
 int main()
 {
@@ -14,7 +14,7 @@ int main()
 long ones(int digit)
 {
     int sum = 0;
-    while (--digit+1)
+    while (--digit + 1)
     {
         sum = sum * 10 + 1;
     }

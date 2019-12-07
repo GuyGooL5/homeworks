@@ -1,5 +1,5 @@
 #include <stdio.h>
-int sum_proper_divisors(int n);
+int sum_proper_divisors(int);
 int main()
 {
     int n;

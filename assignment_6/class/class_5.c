@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void printNumbersDescendingRecursive(int num);
-void printNumbersAscendingRecursive(int num);
-void printNumbersDescAscRecursive(int num);
+void printNumbersDescendingRecursive(int);
+void printNumbersAscendingRecursive(int);
+void printNumbersDescAscRecursive(int);
 
 int main()
 {

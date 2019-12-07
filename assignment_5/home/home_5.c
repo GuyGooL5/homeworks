@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int charsToInt(char a, char b, char c);
+int charsToInt(char, char, char);
 
 int main()
 {

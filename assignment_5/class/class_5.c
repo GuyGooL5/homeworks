@@ -1,6 +1,6 @@
 #include <stdio.h>
-int gcd(int a, int b);
-int gcd_three(int a, int b, int c);
+int gcd(int, int);
+int gcd_three(int, int, int);
 int main()
 {
     int a, b, c;

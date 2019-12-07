@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int hasEvenDivisors(int n);
+int hasEvenDivisors(int);
 
 int main()
 {

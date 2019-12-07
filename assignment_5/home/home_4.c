@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-char myToUpper(char ch);
-char myToLower(char ch);
+char myToUpper(char);
+char myToLower(char);
 
 int main()
 {
-    char ch,upper,lower;
+    char ch, upper, lower;
     printf("Enter a character: ");
     scanf("%c", &ch);
     printf("myToLower: %c\n", myToLower(ch));

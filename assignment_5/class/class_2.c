@@ -1,5 +1,5 @@
 #include <stdio.h>
-int reverse_number(int n);
+int reverse_number(int);
 int main()
 {
     int n;

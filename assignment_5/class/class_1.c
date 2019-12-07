@@ -1,5 +1,5 @@
 #include <stdio.h>
-int arithmetic_op(int a, int b, char op);
+int arithmetic_op(int, int, char);
 int main()
 {
     char op;
