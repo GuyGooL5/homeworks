@@ -15,13 +15,13 @@ int main()
 
 int decreaseDigitsRec(int num)
 {
-	if (num <= 10)
-		return num - 1;
-	return (num % 10 ? num % 10 - 1 : 9) + decreaseDigitsRec(num / 10) * 10;
+	if (num < 10)
+		return (num + 9) % 10;
+	return (num % 10 + 9) % 10 + decreaseDigitsRec(num / 10) * 10;
 }
 int increaseDigitsRec(int num)
 {
 	if (num < 10)
-		return num % 10 - 9 ? num + 1 : 0;
-	return (num % 10 - 9 ? num % 10 + 1 : 0) + increaseDigitsRec(num / 10) * 10;
+		return (num + 1) % 10;
+	return (num % 10 + 1) % 10 + increaseDigitsRec(num / 10) * 10;
 }
