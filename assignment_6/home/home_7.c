@@ -16,7 +16,7 @@ int printDecToBinRec(int num)
 {
 	if (num > 0)
 	{
-		printDecToBinRec(num / 2);
-		printf("%d", num % 2);
+		printDecToBinRec(num >> 1);
+		printf("%d", num & 1);
 	}
 }
