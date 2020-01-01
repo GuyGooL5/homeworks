@@ -28,5 +28,7 @@ int palindromeRec(int *arr, int n)
 {
 	if (arr >= arr + n)
 		return 1;
-	return arr[0] == arr[n - 1] ? palindromeRec(arr + 1, n - 2) : 0;
+	if (palindromeRec(arr + 1, n - 2))
+		return arr[0] == arr[n - 1];
+	return 0;
 }

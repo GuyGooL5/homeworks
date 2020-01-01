@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int charRepeatRec(int, char, char);
+void charRepeatRec(int, char, char);
 
 int main()
 {
@@ -14,7 +14,7 @@ int main()
 	return 0;
 }
 
-int charRepeatRec(int num, char c1, char c2)
+void charRepeatRec(int num, char c1, char c2)
 {
 	if (num >= 1)
 	{

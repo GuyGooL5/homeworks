@@ -7,9 +7,11 @@ int *filterParityRealloc(int *, int, int, int *);
 //Just for printing the new array.
 void printArray(int *arr, int n)
 {
-	printf("{ ");
-	for (int i = 0; i < n; i++)
-		printf("%d ", arr[i]);
+	int i = 0;
+	printf("{");
+	for (i; i < n - 1; i++)
+		printf("%d,", arr[i]);
+	printf("%d", arr[i]);
 	printf("}");
 }
 int main()
