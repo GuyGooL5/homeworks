@@ -18,7 +18,7 @@ int main()
 int palindrome(int *arr, int n)
 {
 	int i = 0;
-	for (i; i < n; i++)
+	for (i; i <= n / 2; i++)
 		if (arr[i] != arr[n - 1 - i])
 			return 0;
 	return 1;
